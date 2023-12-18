@@ -1,0 +1,37 @@
+.heart{
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(
+        /* 135deg, */
+        /* #CE0C3E, */
+        /* #E23E61, */
+        /* pink, */
+        #F22258,
+        red
+    );
+    background-repeat: no-repeat;
+    transform: rotate(45deg) ;
+    margin: 190px auto;
+    position: relative;
+}
+.heart::after,
+.heart::before{
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    background: radial-gradient(
+        /* 135deg, */
+        /* #CE0C3E, */
+        /* #E23E61, */
+        /* pink, */
+        #F22258,
+        red
+    );
+    
+}
+.heart::before{
+    transform: translateX(-190px);
+}
+.heart::after{
+    transform: translateY(-190px);
+}
